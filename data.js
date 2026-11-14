@@ -11,7 +11,7 @@
 const CFG = {
 
   /* ---------- 1. SALAM PEMBUKA ---------- */
-  salam: "Om Nama Sivaye",              // tulisan kecil di paling atas
+  salam: "Om Namah Shivaya",              // tulisan kecil di paling atas
 
   /* ---------- 2. DATA ALMARHUMAH ---------- */
   nama: "Parmespari",    // nama lengkap
