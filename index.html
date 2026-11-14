@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Karumathi</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Serif+Tamil:wght@400;600&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kd" viewBox="0 0 120 12"><path d="M60 1l5 5-5 5-5-5z"/><circle cx="44" cy="6" r="1.4"/><circle cx="31" cy="6" r="1.4"/><circle cx="18" cy="6" r="1.4"/><circle cx="76" cy="6" r="1.4"/><circle cx="89" cy="6" r="1.4"/><circle cx="102" cy="6" r="1.4"/></symbol>
+  <symbol id="lamp" viewBox="0 0 40 90"><path d="M20 4c3 4 4 7 0 11-4-4-3-7 0-11zM20 18v10M12 28h16M14 28c0 4 3 6 6 6s6-2 6-6M20 34v34M9 68h22M12 68l3-10h10l3 10M10 86h20M13 86l2-8h10l2 8"/></symbol>
+</svg>
+
+<div id="card"><div class="sheet">
+  <div class="el om">ॐ</div>
+  <p class="el kick salam" id="salam">Om Sivamayam</p>
+
+  <div class="el trio">
+    <div class="side"><svg><use href="#lamp"/></svg><small>Lahir</small><div id="lh"></div></div>
+    <div class="arch"><div id="foto">Foto almarhumah</div></div>
+    <div class="side"><svg><use href="#lamp"/></svg><small>Berpulang</small><div id="wf"></div></div>
+  </div>
+
+  <svg class="el kd"><use href="#kd"/></svg>
+
+  <p class="el kick">Upacara Doa</p>
+  <div class="el ttl">Karumathi</div>
+  <div class="el big ta">கருமாதி</div>
+  <div class="el hari" id="hari">Doa Hari ke-16</div>
+
+  <p class="el for2" style="margin-top:22px">Untuk mengenang <span id="hub">nenek kami tercinta</span></p>
+  <div class="el name" id="nama">Almarhumah Nama Lengkap</div>
+  <div class="el nt ta" id="tamil"></div>
+  <p class="el wf" id="wfket"></p>
+
+  <svg class="el kd"><use href="#kd"/></svg>
+
+  <div class="el"><div class="h3">Doa Hari ke-<span id="hk">16</span></div>
+    <dl class="dl">
+      <div><dt>Tanggal</dt><dd id="tgl">-</dd></div>
+      <div><dt>Waktu</dt><dd id="jam">-</dd></div>
+      <div><dt>Tempat</dt><dd id="tempat">-</dd></div>
+    </dl>
+    <p style="margin-top:20px"><a class="btn" id="maps" href="#" target="_blank" rel="noopener">Lihat Lokasi</a></p>
+  </div>
+
+  <div class="el" id="akhirBox" style="margin-top:34px"><div class="h3">Upacara Penutup</div>
+    <dl class="dl">
+      <div><dt>Tanggal</dt><dd id="atgl">-</dd></div>
+      <div><dt>Waktu</dt><dd id="ajam">-</dd></div>
+      <div><dt>Tempat</dt><dd id="atempat">-</dd></div>
+      <div id="aketRow"><dt>Lanjutan</dt><dd id="aket">-</dd></div>
+    </dl>
+  </div>
+
+  <svg class="el kd"><use href="#kd"/></svg>
+
+  <div class="el miss"><small>Dirindukan oleh</small><span id="dirindukan"></span></div>
+
+  <div class="el" id="kontakBox" style="margin-top:34px"><div class="h3" style="text-align:center">Narahubung</div>
+    <div class="ct2" id="kontak"></div>
+  </div>
+
+  <p class="el note" id="catatan" style="margin-top:34px"></p>
+
+  <svg class="el kd"><use href="#kd"/></svg>
+  <p class="el ta" style="color:var(--red);font-size:1.1rem;font-weight:600">ஓம் சாந்தி சாந்தி சாந்தி</p>
+  <p class="el kick" style="margin-top:8px" id="keluarga">Keluarga Besar</p>
+  <p class="el" style="margin-top:14px"><button class="lnk" id="share" type="button">Bagikan undangan ini</button></p>
+</div></div>
+
+<div id="frame"></div>
+<div class="bd t"></div><div class="bd b"></div>
+<div class="toast" id="toast"></div>
+
+<div id="cover">
+  <div class="pn l"><div class="bd t"></div><div class="bd b"></div></div>
+  <div class="pn r"><div class="bd t"></div><div class="bd b"></div></div>
+  <div class="ct">
+    <svg id="kolam" viewBox="-100 -100 200 200"></svg>
+    <p class="kick">Undangan Doa Keluarga</p>
+    <h1 class="serif" style="font-family:'Cormorant Garamond',serif">Karumathi</h1>
+    <div class="tm ta">கருமாதி</div>
+    <p class="for">Mengenang <span id="cvname">Nenek Tercinta</span></p>
+    <button class="btn" id="openBtn">Buka Undangan</button>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
