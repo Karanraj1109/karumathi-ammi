@@ -11,7 +11,7 @@
 const CFG = {
 
   /* ---------- 1. SALAM PEMBUKA ---------- */
-  salam: "Om Sivamayam",              // tulisan kecil di paling atas
+  salam: "Om Nama Sivaye",              // tulisan kecil di paling atas
 
   /* ---------- 2. DATA ALMARHUMAH ---------- */
   nama: "Parmespari",    // nama lengkap
@@ -27,7 +27,7 @@ const CFG = {
 
   /* ---------- 3.DOA BERSAMA (DOA KARUMATHI) ---------- */
   hariKe: 16,                         // doa hari ke berapa (angka, tanpa petik)
-  tanggalISO: "2026-11-20T20:00:00+07:00",
+  tanggalISO: "2026-11-20T10:00:00+07:00",
         // Cara baca: TAHUN-BULAN-TANGGAL T JAM:MENIT:DETIK +ZONA
         // Contoh jam 8 malam: 20:00:00
         // Zona: +07:00 = WIB, +08:00 = WITA / Malaysia, +09:00 = WIT
@@ -50,5 +50,5 @@ const CFG = {
   kontak: [],
 
   /* ---------- 7. PENUTUP ---------- */
-  keluarga: "Keluarga Besar (nama keluarga)"   // tulisan kecil paling bawah
+  keluarga: "Keluarga Besar R. Wasuren"   // tulisan kecil paling bawah
 };

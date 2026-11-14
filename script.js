@@ -3,8 +3,11 @@
    Semua isi undangan ada di data.js
 ============================================================ */
 const $=id=>document.getElementById(id);
-const L='id-ID',jam=d=>d.toLocaleTimeString(L,{hour:'2-digit',minute:'2-digit'}).replace(':','.')+' WIB';
-const tgl=d=>d.toLocaleDateString(L,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+const L='id-ID',U={timeZone:'UTC'};
+const wall=iso=>new Date(iso.slice(0,19)+'Z');   // jam dibaca persis seperti yang ditulis, tidak bergeser zona waktu
+const zona=iso=>({'+07':'WIB','+08':'WITA','+09':'WIT'}[iso.slice(-6,-3)]||'');
+const jam=(d,iso)=>d.toLocaleTimeString(L,{...U,hour:'2-digit',minute:'2-digit'}).replace(':','.')+' '+zona(iso);
+const tgl=d=>d.toLocaleDateString(L,{...U,weekday:'long',day:'numeric',month:'long',year:'numeric'});
 const sd=iso=>{const d=new Date(iso+'T00:00:00');if(isNaN(d))return '<b>?</b><span>cek format</span><span>tanggal</span>';return `<b>${d.getDate()}</b><span>${d.toLocaleDateString(L,{month:'long'})}</span><span>${d.getFullYear()}</span>`};
 
 /* kolam sampul */
@@ -26,10 +29,10 @@ if(CFG.foto){const im=new Image();im.alt=CFG.nama;
   im.onload=()=>{$('foto').textContent='';$('foto').appendChild(im)};
   im.onerror=()=>{$('foto').textContent='Foto tidak ditemukan: '+CFG.foto+' (cek nama file dan lokasinya)'};
   im.src=CFG.foto}
-const T=new Date(CFG.tanggalISO);
-$('tgl').textContent=tgl(T);$('jam').textContent=jam(T)+' sampai selesai';
+const T=wall(CFG.tanggalISO);
+$('tgl').textContent=tgl(T);$('jam').textContent=jam(T,CFG.tanggalISO)+' sampai selesai';
 $('tempat').textContent=CFG.tempat;$('maps').href=CFG.maps;$('keluarga').textContent=CFG.keluarga;
-if(CFG.akhir){const A=new Date(CFG.akhir.tanggalISO);$('atgl').textContent=tgl(A);$('ajam').textContent=jam(A);$('atempat').textContent=CFG.akhir.tempat;
+if(CFG.akhir){const A=wall(CFG.akhir.tanggalISO);$('atgl').textContent=tgl(A);$('ajam').textContent=jam(A,CFG.akhir.tanggalISO);$('atempat').textContent=CFG.akhir.tempat;
   CFG.akhir.ket?$('aket').textContent=CFG.akhir.ket:$('aketRow').remove()}else $('akhirBox').remove();
 if(!CFG.kontak.length)$('kontakBox').remove();
 CFG.kontak.forEach(c=>{const wa=c.hp.replace(/\D/g,'').replace(/^0/,'62');
