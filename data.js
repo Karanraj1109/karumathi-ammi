@@ -27,7 +27,7 @@ const CFG = {
 
   /* ---------- 3.DOA BERSAMA (DOA KARUMATHI) ---------- */
   hariKe: 16,                         // doa hari ke berapa (angka, tanpa petik)
-  tanggalISO: "2026-11-28T20:00:00+07:00",
+  tanggalISO: "2026-11-20T20:00:00+07:00",
         // Cara baca: TAHUN-BULAN-TANGGAL T JAM:MENIT:DETIK +ZONA
         // Contoh jam 8 malam: 20:00:00
         // Zona: +07:00 = WIB, +08:00 = WITA / Malaysia, +09:00 = WIT
