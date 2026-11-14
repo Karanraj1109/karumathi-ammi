@@ -1,12 +1,5 @@
-# Undangan Karumathi
+# Karumathi Ammi
 
-Website undangan digital satu halaman untuk acara doa Karumathi.
+Repository tujuan untuk proyek undangan digital Karumathi Ammi.
 
-## File utama
-- `index.html` — halaman undangan
-- `style.css` — tampilan dan tata letak
-- `script.js` — animasi dan interaksi
-- `data.js` — data acara yang dapat disesuaikan
-- `foto/fotonenek.jpg` — foto pada undangan
-
-Buka `index.html` untuk melihat undangan secara lokal.
+File proyek belum berhasil ditambahkan. Arsip sumber masih tersedia terpisah dari repository ini.
